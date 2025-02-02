@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is visible.
+  </div>
+
+  <script>
+    // Correct way to modify innerHTML:
+    document.getElementById('myDiv').innerHTML = "This text should replace the previous text. <br> This is additional HTML.";
+  </script>
+</body>
+</html>
